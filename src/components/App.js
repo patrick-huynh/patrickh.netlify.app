@@ -1,10 +1,12 @@
+import { MainPage } from './MainPage';
 import React from 'react';
 
 class App extends React.Component {
     render() {
-        console.log('tester');
         return (
-            <div id="App">hello world</div>
+            <div id="App">
+                <MainPage />
+            </div>
         );
     }
 }
