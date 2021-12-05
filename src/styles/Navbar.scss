@@ -11,7 +11,13 @@
     color: inherit;
     text-decoration: inherit;
     outline: none;
+    font-weight: bold;
   }
+
+.navbar-logo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
 
 .navbar-box {
     margin-top: 20px;
@@ -40,12 +46,13 @@
     flex-direction: column;
   }
   
-  .navbar-box-top__seperator {
+  .navbar-box-seperator {
     width: 100%;
     border: none;
-    height: 2px;
+    height: 3px;
     margin-top: 2px;
-    background-color: black;
+    background-color: grey;
+    opacity: 70%;
   }
   
   .navbar-box-top__navigation {

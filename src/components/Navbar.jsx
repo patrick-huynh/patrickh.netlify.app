@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Navbar.scss';
+import { Link } from 'react-router-dom';
 
 /**
  * Navbar component
@@ -14,18 +15,18 @@ export const Navbar = () => {
             <div className="navbar-box-top__navbar">
                 <div className="navbar-box-top__navigation">
                     <div className="navbar-box-top__logo">
-                        <div className="navbar-logo">Hello</div>
+                        <div className="navbar-logo">patrick.</div>
                     </div>
                     <div className="navbar">
-                        <a href="/" className="navbar-item">Home</a>
-                        <a href="/about" className="navbar-item">About</a>
-                        <a href="/portfolio" className="navbar-item">Portfolio</a>
-                        <a href="/shop" className="navbar-item">Shop</a>
-                        <a href="/blog" className="navbar-item">Blog</a>
-                        <a href="/contact" className="navbar-item">Contact</a>
+                        <Link to="/" className="navbar-item">Home</Link>
+                        <Link to="/about" className="navbar-item">About</Link>
+                        <Link to="/portfolio" className="navbar-item">Portfolio</Link>
+                        <Link to="/shop" className="navbar-item">Shop</Link>
+                        <Link to="/blog" className="navbar-item">Blog</Link>
+                        <Link to="/contact" className="navbar-item">Contact</Link>
                     </div>
                 </div>
-                <hr className="navbar-box-top__seperator" />
+                <hr className="navbar-box-seperator" />
             </div>
         </div>
     );

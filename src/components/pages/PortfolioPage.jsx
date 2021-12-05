@@ -1,15 +1,15 @@
 import React from 'react';
-import '../../styles/ExperiencePage.scss';
+import '../../styles/PortfolioPage.scss';
 
 
 /**
  * ExperiencePage functional component
  * @returns {JSX} component
  */
-export const ExperiencePage = () => {
+export const PortfolioPage = () => {
     return (
         <div>
-            <h1 id='name-title'>Experience</h1>
+            <h1 id='name-title'>Portfolio</h1>
         </div>
     )
 };
