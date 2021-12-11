@@ -1,65 +1,66 @@
 .navbar {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .navbar-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    color: inherit;
-    text-decoration: inherit;
-    outline: none;
-    font-weight: bold;
-  }
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  color: inherit;
+  text-decoration: inherit;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+}
 
 .navbar-logo {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
 }
 
 .navbar-box {
-    margin-top: 20px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-  
-  .navbar-box-top {
-    display: flex;
-    width: 100%;
-    height: 80px;
-  }
-  
-  .navbar-box-top__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: auto;
-  }
-  
-  .navbar-box-top__navbar {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-  
-  .navbar-box-seperator {
-    width: 100%;
-    border: none;
-    height: 3px;
-    margin-top: 2px;
-    background-color: grey;
-    opacity: 70%;
-  }
-  
-  .navbar-box-top__navigation {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 55px;
-  }
+  margin-top: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.navbar-box-top {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.navbar-box-top__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.navbar-box-top__navbar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.navbar-box-seperator {
+  width: 100%;
+  border: none;
+  height: 3px;
+  margin-top: 0px;
+  background-color: grey;
+  opacity: 70%;
+}
+
+.navbar-box-top__navigation {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 55px;
+}
 
