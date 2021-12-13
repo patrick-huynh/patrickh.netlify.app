@@ -1,6 +1,8 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
+import '../../styles/ContactPage.scss';
+
 class ContactPage extends React.Component {
 	renderError({ error, touched}) {
 		if (touched && error) {
@@ -27,15 +29,54 @@ class ContactPage extends React.Component {
 	onSubmit(formValues) {
 		console.log(formValues)
 	}
-	
+
 	render() {
 		return (
-			<form className="ui form error" onSubmit={this.props.handleSubmit(this.onSubmit)}>
-				<Field name="name" component={this.renderInput} label="Enter name" />
-				<Field name="email" component={this.renderInput} label="Enter email" />
-				<button className="ui button primary">Submit</button>
-			</form>
-    );
+			<div className="form-container">
+				<h1 className="title">Contact Me</h1>
+				<form
+					className="ui form error"
+					onSubmit={this.props.handleSubmit(this.onSubmit)}>
+					<Field
+						className="field"
+						name="name"
+						component={this.renderInput}
+						label="Enter name"
+					/>
+					<Field
+						className="field"
+						name="email"
+						component={this.renderInput}
+						label="Enter email" />
+					<button className="ui button primary">Submit</button>
+				</form>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+				<h1>Hello world</h1>
+			</div>
+		);
 	}
 }
 

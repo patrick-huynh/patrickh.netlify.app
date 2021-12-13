@@ -25,7 +25,6 @@ export const Navbar = () => {
                         <Link to="/contact" className="navbar-item">Contact</Link>
                     </div>
                 </div>
-                <hr className="navbar-box-seperator" />
             </div>
         </div>
     );
