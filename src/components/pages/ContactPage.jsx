@@ -32,8 +32,8 @@ class ContactPage extends React.Component {
 
 	render() {
 		return (
-			<div className="form-container">
-				<h1 className="title">Contact Me</h1>
+			<div className="contact">
+				<h1>Contact Me</h1>
 				<form
 					className="ui form error"
 					onSubmit={this.props.handleSubmit(this.onSubmit)}>

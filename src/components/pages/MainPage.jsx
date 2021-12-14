@@ -14,7 +14,7 @@ export const MainPage = () => {
 			showCursor: true,
 			backDelay: 1500,
 			backSpeed: 60,
-			strings: ['Full Stack Software Developer', 'Student']
+			strings: ['Full Stack Software Developer', 'Student at University of Waterloo', 'Studying Mathematics']
 		});
 	}, []);
 
