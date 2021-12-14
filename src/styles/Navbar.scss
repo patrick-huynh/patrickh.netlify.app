@@ -1,7 +1,6 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  color: #E0E1DD;
 }
 
 .navbar-item {
@@ -12,14 +11,15 @@
   color: inherit;
   text-decoration: inherit;
   outline: none;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .navbar-logo {
 font-family: 'Courier New', Courier, monospace;
 font-size: 20px;
-color: #E0E1DD;
 }
 
 .navbar-box {
@@ -47,10 +47,6 @@ color: #E0E1DD;
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: #0D1B2A;
-  position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
 }
 
 .navbar-box-seperator {
