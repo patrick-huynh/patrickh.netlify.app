@@ -12,14 +12,14 @@
   text-decoration: inherit;
   outline: none;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
 .navbar-logo {
-font-family: 'Courier New', Courier, monospace;
-font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
 }
 
 .navbar-box {
@@ -32,7 +32,7 @@ font-size: 20px;
 .navbar-box-top {
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 55px;
 }
 
 .navbar-box-top__logo {
