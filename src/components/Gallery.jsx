@@ -1,5 +1,6 @@
 import React from 'react';
-import nhss from '../assets/images/nhss_grad.png';
+import portfolioItems from '../portfolio/portfolioItems';
+
 import '../styles/Gallery.scss';
 
 
@@ -10,28 +11,15 @@ import '../styles/Gallery.scss';
 export const Gallery = () => {
   return (
     <div className="gallery">
-      <div className="item">
-        <img
-          src={nhss}
-          alt=""
-        />
-        <h4>Full Stack Software Developer</h4>
-      </div>
-      <div className="item">
-        <img
-          src={nhss}
-          alt=""
-        />
-        <h4>Full Stack Software Developer</h4>
-      </div>
-      <div className="item">
-        <img
-          src={nhss}
-          alt=""
-        />
-        <h4>Full Stack Software Developer</h4>
-      </div>
+      {portfolioItems.map((item) => (
+        <div key={item.name} className="item">
+          <img
+            src={item.image}
+            alt=""
+          />
+          <h4>{item.name}</h4>
+        </div>
+      ))}
     </div>
   );
-}
-
+};
