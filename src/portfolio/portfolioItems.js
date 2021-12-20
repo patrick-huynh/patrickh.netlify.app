@@ -1,45 +1,42 @@
 import biquadris from '../assets/images/biquadris.png';
+import cooperators from '../assets/images/cooperators.png';
 import drGoose from '../assets/images/dr_goose.png';
 import nhss from '../assets/images/nhss_grad.png';
 import shoppingBot from '../assets/images/shopping_bot_main.png';
 import sudokuSolver from '../assets/images/sudoku_solver.png';
-
-const WORK_EXPERIENCE = 'Work Experience';
-const PERSONAL_PROJECT = 'Personal Project';
-const VOLUNTEER_EXPERIENCE = 'Volunteer Experience';
-const EXTRA_CURRICULAR = 'Extra Curricular';
+import Portfolio from '../enums/Portfolio';
 
 
 const portfolioItems = [
   {
     name: 'Full Stack Software Developer',
-    image: '',
-    type: WORK_EXPERIENCE, 
+    image: cooperators,
+    type: Portfolio.workExperience, 
   },
   {
     name: 'Biquadris',
     image: biquadris,
-    type: PERSONAL_PROJECT, 
+    type: Portfolio.personalProject, 
   },
   {
     name: 'Dr. Goose',
     image: drGoose,
-    type: PERSONAL_PROJECT, 
+    type: Portfolio.personalProject, 
   },
   {
     name: 'Data Manager',
     image: nhss,
-    type: PERSONAL_PROJECT, 
+    type: Portfolio.personalProject, 
   },
   {
     name: 'Shopping Bot',
     image: shoppingBot,
-    type: PERSONAL_PROJECT, 
+    type: Portfolio.personalProject, 
   },
   {
     name: 'Sudoku Solver',
     image: sudokuSolver,
-    type: PERSONAL_PROJECT, 
+    type: Portfolio.personalProject, 
   },
 ];
 

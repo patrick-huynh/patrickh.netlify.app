@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Navbar.scss';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 /**
  * Navbar component
@@ -9,12 +9,15 @@ import { Link } from 'react-router-dom';
  */
 
 export const Navbar = () => {
-
+    const history = useHistory();
     return (
         <div className="navbar-box-top">
             <div className="navbar-box-top__navbar">
                 <div className="navbar-box-top__navigation">
-                    <div className="navbar-box-top__logo">
+                    <div
+                        className="navbar-box-top__logo"
+                        onClick={() => history.push('/')}
+                    >
                         <div className="navbar-logo">patrick.</div>
                     </div>
                     <div className="navbar">

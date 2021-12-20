@@ -8,18 +8,25 @@ import '../styles/Gallery.scss';
  * Gallery functional component
  * @returns {JSX} component
  */
-export const Gallery = () => {
+export const Gallery = ({ showSpecificSection }) => {
   return (
     <div className="gallery">
-      {portfolioItems.map((item) => (
-        <div key={item.name} className="item">
-          <img
-            src={item.image}
-            alt=""
-          />
-          <h4>{item.name}</h4>
-        </div>
-      ))}
+      {portfolioItems.map((item) => {
+        console.log(showSpecificSection)
+        if (!showSpecificSection || showSpecificSection === item.type) {
+          return (
+            <div key={item.name} className="item">
+              <img
+                src={item.image}
+                alt=""
+              />
+              <h4>{item.name}</h4>
+            </div>
+          );
+        }
+        return null;
+      }
+      )}
     </div>
   );
 };
