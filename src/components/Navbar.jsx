@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Navbar.scss';
 import { Link, useHistory } from 'react-router-dom';
 
@@ -10,17 +10,31 @@ import { Link, useHistory } from 'react-router-dom';
 
 export const Navbar = () => {
   const history = useHistory();
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="navbar-box-top">
-      <div className="navbar-box-top__navbar">
-        <div className="navbar-box-top__navigation">
+    <div className="navbar-box">
+      <div className="navbar-box__navbar">
+        <div className="navbar-box__navigation">
           <div
-            className="navbar-box-top__logo"
-            onClick={() => history.push('/')}
+            className="navbar-box__header"
           >
-            <div className="navbar-logo">patrick.</div>
+            <div
+              className="navbar-bars"
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              <i className={`fas fa-${showMenu ? 'times' : 'bars'}`}></i>
+            </div>
+            <div
+              className="navbar-logo"
+              onClick={() => history.push('/')}
+            >
+              patrick
+              <i className="fas fa-laptop-code"></i>
+            </div>
+            <div className="navbar-filler">
+            </div>
           </div>
-          <div className="navbar">
+          <div className={showMenu ? "navbar" : "navbar-close"}>
             <Link to="/" className="navbar-item">Home</Link>
             <Link to="/about" className="navbar-item">About</Link>
             <Link to="/portfolio" className="navbar-item">Portfolio</Link>
