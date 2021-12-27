@@ -13,9 +13,10 @@
         padding: 0;
         list-style: none;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        align-content: center;
 
         li {
             font-size: 15px;
