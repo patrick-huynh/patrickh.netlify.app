@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Navbar.scss';
 import { Link, useHistory } from 'react-router-dom';
 
@@ -10,7 +10,12 @@ import { Link, useHistory } from 'react-router-dom';
 
 export const Navbar = () => {
   const history = useHistory();
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(null);
+
+  useEffect(() => {
+    setShowMenu(false);
+  }, [history]);
+  
   return (
     <div className="navbar-box">
       <div className="navbar-box__navbar">
@@ -34,11 +39,11 @@ export const Navbar = () => {
             <div className="navbar-filler">
             </div>
           </div>
-          <div className={showMenu ? "navbar" : "navbar-close"}>
-            <Link to="/" className="navbar-item">Home</Link>
-            <Link to="/about" className="navbar-item">About</Link>
-            <Link to="/portfolio" className="navbar-item">Portfolio</Link>
-            <Link to="/contact" className="navbar-item">Contact</Link>
+          <div className={`navbar${showMenu ? ' open' : ' close'}`}>
+            <Link to="/" className="navbar-item"  onClick={() => setShowMenu(false)}>Home</Link>
+            <Link to="/about" className="navbar-item" onClick={() => setShowMenu(false)}>About</Link>
+            <Link to="/portfolio" className="navbar-item" onClick={() => setShowMenu(false)}>Portfolio</Link>
+            <Link to="/contact" className="navbar-item" onClick={() => setShowMenu(false)}>Contact</Link>
           </div>
         </div>
       </div>
