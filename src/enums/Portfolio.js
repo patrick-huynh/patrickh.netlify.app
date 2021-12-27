@@ -1,6 +1,6 @@
  const portfolio = {
     workExperience: 'Work Experience',
-    personalProject: 'Personal Project',
+    personalProject: 'Personal Projects',
     volunteerExperience: 'Volunteer Experience',
     extraCurricular: 'Extra Curricular',
  }

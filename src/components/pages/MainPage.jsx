@@ -12,6 +12,7 @@ export const MainPage = () => {
 	useEffect(() => {
 		init(textRef.current, {
 			showCursor: true,
+			typeSpeed: 60,
 			backDelay: 1500,
 			backSpeed: 60,
 			strings: ['Full Stack Software Developer', 'Student at University of Waterloo', 'Studying Mathematics']
