@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/Navbar.scss';
 import { Link, useHistory } from 'react-router-dom';
 
@@ -11,11 +11,6 @@ import { Link, useHistory } from 'react-router-dom';
 export const Navbar = () => {
   const history = useHistory();
   const [showMenu, setShowMenu] = useState(null);
-
-  useEffect(() => {
-    setShowMenu(false);
-  }, [history]);
-  
   return (
     <div className="navbar-box">
       <div className="navbar-box__navbar">

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import portfolioItems from '../portfolio/portfolioItems';
+import { Modal } from 'react-responsive-modal';
 
+import 'react-responsive-modal/styles.css';
 import '../styles/Gallery.scss';
 
 
@@ -9,13 +11,17 @@ import '../styles/Gallery.scss';
  * @returns {JSX} component
  */
 export const Gallery = ({ showSpecificSection }) => {
+  const [selected, setSelected] = useState(null);
+
   return (
     <div className="gallery">
       {portfolioItems.map((item) => {
-        console.log(showSpecificSection)
         if (!showSpecificSection || showSpecificSection === item.type) {
           return (
-            <div key={item.name} className="item">
+            <div
+              key={item.name}
+              className="item"
+              onClick={() => setSelected(item)}>
               <img
                 src={item.image}
                 alt=""
@@ -27,6 +33,38 @@ export const Gallery = ({ showSpecificSection }) => {
         return null;
       }
       )}
+      <Modal
+        open={selected}
+        onClose={() => setSelected(null)}
+        center
+        classNames={{ closeButton: 'close-button', modal: 'modal' }}
+      >
+        {selected &&
+          <div className="modal-content">
+            <h2>{selected.name}</h2>
+          <div className="subheader">
+            <div className="company">{selected.company}</div>
+            <div className="date">{selected.date}</div>
+            {selected.github &&
+              (<a href={selected.github} target="_blank" rel="noreferrer">
+                <div className="github-link">
+                  <div className="github-view">View on Github</div>
+                  <i className="fab fa-github"></i>
+                </div>
+              </a>
+              )}
+          </div>
+            <hr />
+            <h3>Description</h3>
+            <ul>
+              {selected.description.map((item, idx) => idx === 0
+                ? <h3>{item}</h3>
+                : <li>{item}</li>
+              )}
+            </ul>
+          </div>
+        }
+      </Modal>
     </div>
   );
 };
