@@ -1,3 +1,12 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    // "editor.formatOnSave": true,
+    // "[javascript]": {
+    //     "editor.formatOnSave": false
+    // },
+    // "eslint.alwaysShowStatus": true,
+    // "files.autoSave": "onFocusChange",
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.eslint": true
+    // },
 }

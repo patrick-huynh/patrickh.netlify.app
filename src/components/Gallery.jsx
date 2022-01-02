@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import portfolioItems from '../portfolio/portfolioItems';
 import { Modal } from 'react-responsive-modal';
+import PropTypes from 'prop-types';
 
 import 'react-responsive-modal/styles.css';
 import '../styles/Gallery.scss';
@@ -11,7 +12,7 @@ import '../styles/Gallery.scss';
  * @returns {JSX} component
  */
 export const Gallery = ({ showSpecificSection }) => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(null)
 
   return (
     <div className="gallery">
@@ -67,4 +68,12 @@ export const Gallery = ({ showSpecificSection }) => {
       </Modal>
     </div>
   );
+};
+
+Gallery.defaultProps = {
+  showSpecificSection: null
+}
+
+Gallery.propTypes = {
+  showSpecificSection: PropTypes.any
 };

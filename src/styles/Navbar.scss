@@ -18,12 +18,13 @@
 }
 
 .navbar-logo {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 18px;
   font-weight: 900;
 }
 
-.navbar-bars, .navbar-filler {
+.navbar-bars,
+.navbar-filler {
   display: none;
   width: 40px;
 }
@@ -50,7 +51,6 @@
   flex-direction: column;
 }
 
-
 .navbar-box__navigation {
   display: flex;
   flex: 1;
@@ -59,11 +59,10 @@
 }
 
 .fa-laptop-code {
-  margin-left: 10px !important; 
+  margin-left: 10px !important;
 }
 
 @media screen and (max-width: 960px) {
-
   .navbar {
     flex-direction: column;
     margin-bottom: 20px;
@@ -71,7 +70,6 @@
 
   .open {
     display: initial;
-    
   }
 
   .close {
@@ -99,7 +97,8 @@
     justify-content: space-between;
   }
 
-  .navbar-bars, .navbar-filler {
+  .navbar-bars,
+  .navbar-filler {
     display: initial;
     margin: 0 10px;
   }
