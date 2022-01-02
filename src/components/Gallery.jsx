@@ -43,18 +43,18 @@ export const Gallery = ({ showSpecificSection }) => {
         {selected &&
           <div className="modal-content">
             <h2>{selected.name}</h2>
-          <div className="subheader">
-            <div className="company">{selected.company}</div>
-            <div className="date">{selected.date}</div>
-            {selected.github &&
-              (<a href={selected.github} target="_blank" rel="noreferrer">
-                <div className="github-link">
-                  <div className="github-view">View on Github</div>
-                  <i className="fab fa-github"></i>
-                </div>
-              </a>
-              )}
-          </div>
+            <div className="subheader">
+              <div className="company">{selected.company}</div>
+              <div className="date">{selected.date}</div>
+              {selected.github &&
+                (<a href={selected.github} target="_blank" rel="noreferrer">
+                  <div className="github-link">
+                    <div className="github-view">View on Github</div>
+                    <i className="fab fa-github"></i>
+                  </div>
+                </a>
+                )}
+            </div>
             <hr />
             <h3>Description</h3>
             <ul>
