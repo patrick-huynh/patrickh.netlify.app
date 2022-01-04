@@ -28,8 +28,8 @@
         }
 
         img {
-            min-height: 200px;
-            min-width: 300px;
+            min-height: 100%;
+            min-width: 100%;
             object-fit: contain;
             z-index: 1;
         }
@@ -42,6 +42,17 @@
             }
         }
     }
+    @media screen and (max-width: 960px) {
+        width: 100%;
+        .item {
+            width: 200px;
+            height: 133px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
 .modal-content {
@@ -50,6 +61,7 @@
     .subheader {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     
     .company, .date {
@@ -63,6 +75,12 @@
             font-size: 20px;
             margin: 0 8px;
         }
+
+        @media screen and (max-width: 500px) {
+            .github-view {
+                display: none;
+            }
+        }   
     }
 
     ul {

@@ -22,9 +22,14 @@
             font-size: 15px;
             margin: 0 25px;
             padding: 13px;
-            border-radius: 25px;
+            border-radius: 15px;
             cursor: pointer;
-            border: 1px solid #262426;
+            border: 0px solid #262426;
+
+            &:hover {
+                background-color: #262426;
+                color: white;    
+            }
 
             &.active {
                 background-color: #262426;
