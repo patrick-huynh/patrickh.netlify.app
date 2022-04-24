@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
+import Spline from "@splinetool/react-spline";
 import '../../styles/MainPage.scss';
 
 
@@ -29,7 +30,14 @@ export const MainPage = () => {
 					</h3>
 				</div>
 			</div>
-			{/* <div className="right"></div> */}
+			<div className="right">
+				<div className="spline-wrapper">
+					<Spline
+						style={{ width: "100%", marginLeft: "-200px" }}
+						scene="https://draft.spline.design/0Tl-4VvxDgZCWPKi/scene.spline"
+					/>
+				</div>
+			</div>
 		</div>
 	)
 };
