@@ -33,7 +33,7 @@ export const MainPage = () => {
 			<div className="right">
 				<div className="spline-wrapper">
 					<Spline
-						style={{ width: "100%", marginLeft: "-200px" }}
+						style={{ width: "100%", marginLeft: "-250px" }}
 						scene="https://draft.spline.design/0Tl-4VvxDgZCWPKi/scene.spline"
 					/>
 				</div>
