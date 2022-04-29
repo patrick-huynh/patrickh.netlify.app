@@ -1,7 +1,7 @@
 # Personal Website V2
 
-The website is live [here](https://patrickh.netlify.app) or at the following link:\
-https://patrickh.netlify.app
+The website is live at the following link:\
+[https://patrickh.netlify.app](https://patrickh.netlify.app)
 
 This project was created using ReactJS/Redux.
 
